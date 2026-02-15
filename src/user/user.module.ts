@@ -8,6 +8,7 @@ import { HashingPasswordModule } from 'src/hashing-password/hashing-password.mod
 @Module({
   controllers: [UserController],
   providers: [UserService],
-  imports: [TypeOrmModule.forFeature([User]),HashingPasswordModule]
+  imports: [TypeOrmModule.forFeature([User]),HashingPasswordModule],
+  exports: [UserService]
 })
 export class UserModule {}
