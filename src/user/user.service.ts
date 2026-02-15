@@ -4,10 +4,10 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './entities/user.entity';
 import { Repository } from 'typeorm';
-import { HashingPasswordService } from 'src/hashing-password/hashing-password.service';
+import { HashingPasswordService } from '../hashing-password/hashing-password.service';
 import { Roles } from '../enums/enum';
 import { envConst } from '../enums/constants';
-import { JwtPayload } from 'src/auth/interface/jwt.interface';
+import { JwtPayload } from '../auth/interface/jwt.interface';
 
 @Injectable()
 export class UserService implements OnModuleInit {

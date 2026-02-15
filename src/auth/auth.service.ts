@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { LoginDto } from './dto/Login.dto';
-import { UserService } from 'src/user/user.service';
-import { HashingPasswordService } from 'src/hashing-password/hashing-password.service';
+import { UserService } from '../user/user.service';
+import { HashingPasswordService } from '../hashing-password/hashing-password.service';
 import { JwtService } from '@nestjs/jwt';
 
 @Injectable()

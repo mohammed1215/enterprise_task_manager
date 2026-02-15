@@ -23,8 +23,8 @@ import { TaskService } from './task.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import { AuthGuard } from '@nestjs/passport';
-import { User } from 'src/custom-decorators/user.decorator';
-import { type JwtPayload } from 'src/auth/interface/jwt.interface';
+import { User } from '../custom-decorators/user.decorator';
+import { type JwtPayload } from '../auth/interface/jwt.interface';
 
 @ApiTags('Tasks')
 @ApiBearerAuth()

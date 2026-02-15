@@ -4,10 +4,10 @@ import { UpdateTaskDto } from './dto/update-task.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './entities/task.entity';
 import { FindOptionsWhere, Repository } from 'typeorm';
-import { JwtPayload } from 'src/auth/interface/jwt.interface';
+import { JwtPayload } from '../auth/interface/jwt.interface';
 import { Roles } from '../enums/enum';
-import { UserService } from 'src/user/user.service';
-import { User } from 'src/user/entities/user.entity';
+import { UserService } from '../user/user.service';
+import { User } from '../user/entities/user.entity';
 
 @Injectable()
 export class TaskService {
