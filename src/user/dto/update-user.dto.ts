@@ -1,6 +1,6 @@
 import { PartialType } from '@nestjs/swagger';
 import { CreateUserDto } from './create-user.dto';
-import { Roles } from 'src/enums/enum';
+import { Roles } from '../../enums/enum';
 import { IsOptional } from 'class-validator';
 
 

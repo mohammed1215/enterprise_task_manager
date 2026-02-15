@@ -5,8 +5,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './entities/user.entity';
 import { Repository } from 'typeorm';
 import { HashingPasswordService } from 'src/hashing-password/hashing-password.service';
-import { Roles } from 'src/enums/enum';
-import { envConst } from 'src/enums/constants';
+import { Roles } from '../enums/enum';
+import { envConst } from '../enums/constants';
 import { JwtPayload } from 'src/auth/interface/jwt.interface';
 
 @Injectable()

@@ -45,9 +45,7 @@ interface database_type {
         password: config.get<string>('DATABASE_PASS'),
         entities: [User,Task],
         synchronize:true,
-        ssl:{
-          rejectUnauthorized:true
-        }
+
       }
     }
   }),

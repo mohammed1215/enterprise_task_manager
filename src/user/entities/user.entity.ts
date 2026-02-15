@@ -1,5 +1,5 @@
 import { Exclude } from "class-transformer";
-import { Roles } from "src/enums/enum";
+import { Roles } from "../../enums/enum";
 import { Task } from "src/task/entities/task.entity";
 import {  Column, DeleteDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 @Entity()

@@ -4,7 +4,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from 'src/custom-decorators/user.decorator';
 import { type JwtPayload } from 'src/auth/interface/jwt.interface';
-import { Roles } from 'src/enums/enum';
+import { Roles } from '../enums/enum';
 import { ApiQuery } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { RolesGuard } from 'src/auth/guard/role.guard';

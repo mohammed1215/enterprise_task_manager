@@ -1,6 +1,6 @@
 import { CanActivate, ExecutionContext } from "@nestjs/common";
 import { Request } from "express";
-import { Roles } from "src/enums/enum";
+import { Roles } from "../../enums/enum";
 
 export class RolesGuard implements CanActivate{
     constructor(private allowedRoles:Roles[]){}

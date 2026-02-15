@@ -5,7 +5,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './entities/task.entity';
 import { FindOptionsWhere, Repository } from 'typeorm';
 import { JwtPayload } from 'src/auth/interface/jwt.interface';
-import { Roles } from 'src/enums/enum';
+import { Roles } from '../enums/enum';
 import { UserService } from 'src/user/user.service';
 import { User } from 'src/user/entities/user.entity';
 
