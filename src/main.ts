@@ -16,9 +16,22 @@ async function bootstrap() {
     .addBearerAuth() // If you use authentication
     .build();
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api/docs', app, document,{
-    jsonDocumentUrl:"api-json"
+  SwaggerModule.setup('api/docs', app, document, {
+    customSiteTitle: 'Task Manager API',
+    customCssUrl:
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui.min.css',
+    customJs: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui-bundle.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui-standalone-preset.js',
+    ],
+    jsonDocumentUrl: 'api-json',
+    swaggerOptions: {
+      persistAuthorization: true, 
+    },
   });
+  // SwaggerModule.setup('api/docs', app, document,{
+  //   jsonDocumentUrl:"api-json"
+  // });
   
   app.useGlobalPipes(new ValidationPipe({forbidNonWhitelisted:true,whitelist:true}))
   await app.listen(process.env.PORT ?? 4000);
